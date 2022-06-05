@@ -1,0 +1,71 @@
+/* * {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+} */
+
+/*----------------Carrusel-------------------*/
+
+/*ejemplo 2
+.content {
+    
+    
+    display: flex;
+    justify-content: center;
+    padding-top: .5%;
+    
+}
+*/
+
+.carousel {    
+    /*ejemplo 2
+    width: 95%;
+    */
+    max-width: 100%;
+    justify-content: center;
+    background-color: lightskyblue;
+    overflow: hidden;
+}
+
+.carousel .big-container {
+    width: 200%;
+    background-color: orange; 
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carousel .img {
+    width: calc(100% / 2);
+    min-width: 1vh;
+    background-color: lime;
+}
+
+.carousel .points {
+    width: 100%;
+    background-color: red;
+    padding: 0 1em;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .point {
+    width: .5em;
+    height: .5em;
+    margin: 1%;
+    list-style: none;
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+
+.carousel .point.active {
+    background-color: orange;
+}

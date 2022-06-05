@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+.header {
+    /*Flexbox*/
+    display: flex; 
+        
+    /*Alinear los elementos con un espacio */
+    justify-content: space-between;
+
+    /* Alinear items vertical en el centro. */
+    align-items: center;
+
+    /*Ajustamos el ancho maximo*/
+    max-width: 100%;
+
+    /*Ajustamos el largo*/
+    height: fit-content;
+
+    /*Tamaño letra con medidas relativas raiz*/
+    font-size: 3vw;
+
+    /*Relleno*/
+    padding: .5em;
+
+    /*color de fondo*/
+    background-color: #8e1719;
+
+    /*color de letras*/
+    color: white;
+}
+
+.gps {
+    /*icono gps*/
+    color: white;
+    size: 1rem;
+}
+

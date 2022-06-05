@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+
+    /*space-between los alinea a los extremos a diferencia de space-around*/
+    justify-content: space-between;
+    
+    align-items: center;
+    max-width: 100%;
+    height: fit-content;
+    background-color: #1e1e1e;
+    color: white;
+
+    position: relative;
+}
+
+.navbar-logo img {
+    text-align: center;
+    width:  3rem; /*intentar con 15 vw*/
+    height: 3rem; /*intentar con 15 vw*/
+    padding: 10% 10% 0 0;
+}
+
+/* titulo si es necesario, la imagen ya la tiene
+.brand-title {
+    font-size: 1.5rem;
+    padding-left: .5rem;
+}
+*/
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    /*quitamos los puntos de lista*/
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.8rem;
+    height: 1.5rem;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+/* hacemos aparecer un boton desplegable si el ancho es menor a *500px*/
+@media (max-width: 495px) {
+    .toggle-button {
+        display: flex;
+        align-self: end;
+        margin: 1rem 1rem 0 0;
+    }
+
+    /*ocultamos los links y hacemos que ocupe el tamaño del contenedor*/
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    /*Lo ponemos debajo y luego lo movemos a la izquierda*/ 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /*centramos y lo ponemos en forma de columna/lista*/
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    /*eliminamos el relleno para que sea mas chico*/
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
