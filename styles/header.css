@@ -9,22 +9,16 @@
     display: flex; 
         
     /*Alinear los elementos con un espacio */
-    justify-content: space-between;
-
-    /* Alinear items vertical en el centro. */
-    align-items: center;
+    justify-content: flex-start;
 
     /*Ajustamos el ancho maximo*/
     max-width: 100%;
-
-    /*Ajustamos el largo*/
-    height: fit-content;
-
+    
     /*Tamaño letra con medidas relativas raiz*/
-    font-size: 3vw;
+    font-size: 1.8vw;
 
     /*Relleno*/
-    padding: .5em;
+    padding: .5rem 2rem .5rem 1rem;
 
     /*color de fondo*/
     background-color: #8e1719;
@@ -33,9 +27,18 @@
     color: white;
 }
 
-.gps {
-    /*icono gps*/
-    color: white;
-    size: 1rem;
+.header .info {
+    display: flex;
+    margin: 0 2vw;
+    gap: 1.5vw;
+}
+
+.header .info p{
+    display: grid;
+    place-content: center;
+}
+
+.header i {
+    font-size: 2.5vw;
 }
 

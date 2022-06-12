@@ -42,7 +42,6 @@
 
 .carousel .img {
     width: calc(100% / 2);
-    min-width: 1vh;
     background-color: lime;
 }
 
@@ -69,3 +68,163 @@
 .carousel .point.active {
     background-color: orange;
 }
+
+
+/*Texto el mejor lugar para comer*/
+.bestPlace {
+    max-width: 100%;
+    width: 100%;
+    height: 15vw;
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+}
+
+.bestPlace p {
+    font-size: 3vw;
+}
+
+
+/*Imagen de cocina y texto "El mejor lugar para comer"---*/
+.cocina {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10%;
+    background-color: #8e1719;
+    color: white;
+
+}
+
+.cocina img {
+    width: 50%;
+}
+
+.cocina p {
+    float: right;
+    width: 50%;
+    font-size: 3vw;
+    text-align: center;
+    /*centrar el texto con grid*/
+    display: grid;
+    place-content: center;
+    
+}
+
+.bisteck {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.bisteck img {
+    width: 100%;
+}
+
+.bisteck p {
+    position: absolute;
+    background-color: #8e1719;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    right:0;
+    left: 0;
+    top: 0;
+    bottom: 70%;
+    display: grid;
+    place-content: center;
+}
+
+/*--Redes sociales------------------------*/
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    gap: 5vw;
+
+    /*El tamaño de los iconos se camnia con font-size*/
+
+    font-size: 10vw;
+}
+
+.social p {
+    display: grid;
+    place-content: center;
+    font-size: 5vw;
+    color: #8e1719;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-icons a {
+    color: #8e1719;
+    size: 15vw;
+
+}
+
+/*footer----------------------------------*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 1vw 0 0 0;
+    padding: 1vw;
+    font-size: 3vw ;
+}
+
+.footer-logo {
+    display: grid;
+    place-content: center;
+}
+
+.footer-logo img {
+    width:  15vw;
+    height: 15vw;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vw;
+}
+
+.footer-content ul {
+    list-style: none;
+    margin: 0 0 1vw 0;
+}
+
+.footer-content li {
+    font-size: 1.3vw;
+}
+
+.footer-content li a {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content li a:hover{
+    color: #8e1719
+}
+
+.reserve {
+    display: grid;
+    place-content: center;
+    font-size: 1vw;
+    background-color: black;
+    text-align: center;
+    padding: 1vw 0 1vw 0;
+}
+
+

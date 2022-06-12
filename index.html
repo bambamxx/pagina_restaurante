@@ -16,18 +16,26 @@
     <!------ENCABEZADO------------------------------------------------>
 
     <header class="header">
-        <p class="info">León, Guanajuato</p>
-        <p class="info">+52 479 10 10 996</p>
+        
+        <div class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>León, Guanajuato</p>
+        </div>
+
+        <div class="info">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>+52 479 10 10 996</p>
+        </div>
     </header>
 
     <!------BARRA DE NAVEGACIÓN--------------------------------------->
     <nav class="navbar">
 
         <!------------------LOGO--------------------->
-        <div class="navbar-logo"><img src="/icons/logo.png" alt="Logo Santo Pollo"></div>
-
-        <!-- Titulo si es necesario, el logo ya lo tiene
-        <div class="brand-title">Santo Pollo</div> -->
+        <div class="navbar-logo"><img src="/icons/logo.png" alt="Logo Santo Pollo">
+            <!-- Titulo si es necesario, el logo ya lo tiene-->
+            <div class="brand-title">Santo Pollo</div> 
+        </div>
 
         <!----------BOTON DE MENU CELULARES---------->
         <div class="toggle-button">
@@ -39,11 +47,10 @@
         <!---------LINKS NAVEGACION DE PAGINA-------->
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Reservación</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/menu.html">Menú</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -67,10 +74,83 @@
             </ul>
         </div>
 
+        <!--Primer texto: El mejor lugar para comer------>
+        <div class="bestPlace">
+            <p>El mejor lugar para comer</p>
+        </div>
+
+        <!--Segundo texto: Cocina ----------------------->
+        <div class="cocina">
+            <img src="/img/inicio/home-seccion 1.png" alt="">
+            <p>Buscamos lo mejor <br> para ti</p>
+        </div>
+
+        <!--Tercer texto: Bisteck ----------------------->
+        <div class="bisteck">
+            <img src="/img/inicio/home-seccion 2.png" alt="">
+            <p>Conoce nuestros platillos preparados con los mejores ingredientes 100% frescos</p>        
+        </div>
+
+
+        <!--Redes Sociales--------------->
+        <div class="social">
+            <p>Siguenos en nuestras redes sociales</p>
+            <div class="social-icons">
+                <div><a href="#" class="fa-brands fa-facebook-square"></a></div>
+                <div><a href="#" class="fa-brands fa-instagram-square"></a></div>
+                <div><a href="#" class="fa-brands fa-twitter-square"></a></div>
+                <div><a href="#" class="fa-brands fa-youtube-square"></a></div>
+            </div>
+        </div>
 
     </section>
 
+
+    <!--Footer-------------------------------------------------------->
+    <footer class="footer">
+        <div class="footer-logo"><img src="/icons/logo.png" alt="Logo Santo Pollo"></div>
+        <div class="footer-content">
+            <ul>Conócenos
+                <li><a href="#">Únete al equipo</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+
+            <ul>Últimos eventos
+                <li><a href="#">Gran festín de carne</a></li>
+                <li><a href="#">Banquete empresarial</a></li>
+                <li><a href="#">Recorrido del sabor</a></li>
+            </ul>
+
+            <ul>Explora más
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <ul class="footer-horarios">Horarios de trabajo
+                <li class="footer-horario">Lunes a viernes    12-6 pm</li>
+                <li class="footer-horario">Sabados y Domingos 12-5pm </li>
+                <li class="footer-horario">Días festivos      12-4 pm</li>
+            </ul>
+
+            <ul>Contacto
+                <li><a href="#">León, Guanajuato</a></li>
+                <li><a href="#">+52 479-101-09-96</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </div>
+
+        <div class="reserve">
+            <p>Todos los derechos reservados 2022</p>
+        </div>
+    </footer>
+
     <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/2da10ca441.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
