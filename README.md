@@ -38,6 +38,6 @@ Realizaremos una pagina web de comida, donde podran conocer más sobre el restau
 
 Buscamos crear algo no tan complejo pero que sea vistoso para el espectador, no somos diseñadores pero aun asi creamos 4 Perstañas en Figma para guiarnos 
 
-![App Screenshot](https://github.com/bambamxx/pagina_restaurante/blob/main/img/dise%C3%B1o.png)
+![App Screenshot](https://github.com/bambamxx/pagina_restaurante/blob/main/img/Desktop%20-%201.png)
 
 #### Estructura
