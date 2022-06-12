@@ -1,0 +1,49 @@
+/* ---------------------- PADDINGS ---------------------- */
+
+.padding-container {
+    padding: 5.0625rem 0;
+}
+.padding-container-2 {
+    padding: 5.0625rem 0 0 0;
+}
+
+/* ---------------------- CONTAINER --------------------- */
+
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1230px;
+    }
+}

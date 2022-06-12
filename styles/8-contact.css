@@ -1,0 +1,33 @@
+/* ----------------------- BANNER ----------------------- */
+.contact--banner {
+    background-image: url(../img/contacto/banner.png);
+}
+
+/* ------------------------ FORM ------------------------ */
+.form-reservacion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 2.1875rem;
+    height: 100%;
+}
+.form-reservacion input[type="email"],
+input[type="tel"],
+select {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.form-reservacion h3 {
+    font-size: 1.875rem;
+}
+
+/* ------------------------- MAP ------------------------ */
+
+.ubicacion__map iframe {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 90%;
+    min-height: 600px;
+}

@@ -1,13 +1,13 @@
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     box-sizing: border-box;
 }
 
 .header {
     /*Flexbox*/
-    display: flex; 
-        
+    display: flex;
+
     /*Alinear los elementos con un espacio */
     justify-content: space-between;
 
@@ -21,10 +21,10 @@
     height: fit-content;
 
     /*Tamaño letra con medidas relativas raiz*/
-    font-size: 3vw;
+    font-size: 1.2vw;
 
     /*Relleno*/
-    padding: .5em;
+    padding: 0.5em;
 
     /*color de fondo*/
     background-color: #8e1719;
@@ -38,4 +38,3 @@
     color: white;
     size: 1rem;
 }
-
