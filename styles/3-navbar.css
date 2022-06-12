@@ -1,7 +1,10 @@
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     box-sizing: border-box;
+}
+.container-nav {
+    background: var(--color-terciario);
 }
 
 .navbar {
@@ -9,11 +12,11 @@
 
     /*space-between los alinea a los extremos a diferencia de space-around*/
     justify-content: space-between;
-    
+
     align-items: center;
     max-width: 100%;
     height: fit-content;
-    background-color: #1e1e1e;
+
     color: white;
 
     position: relative;
@@ -25,7 +28,12 @@
     align-items: center;
 }
 .navbar-logo img {
+<<<<<<< HEAD:styles/navbar.css
     width:  3rem; /*intentar con 15 vw*/
+=======
+    text-align: center;
+    width: 3rem; /*intentar con 15 vw*/
+>>>>>>> 8a320c9359e22bd5fe9fc3045acf5836eb792ef3:styles/3-navbar.css
     height: 3rem; /*intentar con 15 vw*/
     padding: 5% 5% 5% 5%;
 }
@@ -94,7 +102,7 @@
         width: 100%;
     }
 
-    /*Lo ponemos debajo y luego lo movemos a la izquierda*/ 
+    /*Lo ponemos debajo y luego lo movemos a la izquierda*/
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -112,11 +120,10 @@
 
     /*eliminamos el relleno para que sea mas chico*/
     .navbar-links li a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
-    .navbar-links.active{
+    .navbar-links.active {
         display: flex;
     }
-
 }

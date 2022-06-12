@@ -1,13 +1,13 @@
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     box-sizing: border-box;
 }
 
 .header {
     /*Flexbox*/
-    display: flex; 
-        
+    display: flex;
+
     /*Alinear los elementos con un espacio */
     justify-content: flex-start;
 
@@ -41,4 +41,3 @@
 .header i {
     font-size: 2.5vw;
 }
-
