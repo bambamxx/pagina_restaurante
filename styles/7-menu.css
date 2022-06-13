@@ -118,6 +118,56 @@
     right: 1.625rem;
     cursor: pointer;
 }
+/* ------------------------ MODAL ----------------------- */
+.modal-menu-container {
+    left: 100%;
+    position: fixed;
+}
+
+.modal-menu-container.active {
+    display: flex;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0%;
+    background: var(--color-blanco);
+    width: 100%;
+    transition: all 300ms;
+}
+
+.close {
+    width: 24px;
+    height: 24px;
+    background: url(/icons/close.svg) center no-repeat;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.wrapper-img {
+    width: 45%;
+    background: url(/img/menu/gallery-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper-plato {
+    font-size: 1rem;
+    padding: 3rem;
+    width: 55%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.071);
+}
+.wrapper-plato .receta-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.wrapper-plato .receta-title h2 {
+    font-weight: 800;
+}
 
 /* -------------------- MEDIA QUERIES ------------------- */
 @media screen and (max-width: 992px) {

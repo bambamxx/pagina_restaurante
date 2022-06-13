@@ -76,7 +76,7 @@
 }
 
 /* hacemos aparecer un boton desplegable si el ancho es menor a *500px*/
-@media (max-width: 495px) {
+@media (max-width: 768px) {
     .toggle-button {
         display: flex;
         align-self: end;

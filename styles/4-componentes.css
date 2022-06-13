@@ -131,10 +131,10 @@
 .nota-flotante-right {
     font-weight: 400;
     max-width: 596px;
-    width: 50%;
+    width: 40%;
     padding: 2.5rem;
     position: absolute;
-    left: 0;
+    left: 5rem;
     top: 20%;
     background-color: var(--color-primario);
     color: var(--color-blanco);
@@ -159,10 +159,16 @@
     }
     .nota-flotante {
         position: relative;
-        padding: 2.5rem 0 0 0;
+        padding: 2.5rem 0.5rem 0 0.5rem;
         width: 100%;
     }
-
+    .nota-flotante-right {
+        position: relative;
+        width: 100%;
+        left: 0;
+        max-width: none;
+        margin-top: 10px;
+    }
     .title {
         margin: 0px auto 3.0625rem auto;
     }
