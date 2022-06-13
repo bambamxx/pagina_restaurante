@@ -91,6 +91,30 @@
     transform: translateX(-50%) scale(1.1);
 }
 
+/* -------------------- PRESENTACION -------------------- */
+
+.presentacion-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 690px;
+}
+.presentacion__img {
+    width: 50%;
+    background: url(/img/contacto/Carne-asada-form.png) no-repeat;
+    background-position: 33% 100%;
+}
+
+.presentacion__content {
+    width: 50%;
+    color: var(--color-blanco);
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.75rem 2.5rem;
+}
+
 /* -------------------- NOTA FLOTANTE ------------------- */
 
 .nota-flotante {
@@ -126,30 +150,6 @@
     color: var(--color-secundario);
     font-size: 2.31rem;
     font-weight: 400;
-}
-
-/* -------------------- PRESENTACION -------------------- */
-
-.presentacion-container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 690px;
-}
-.presentacion__img {
-    width: 50%;
-    background: url(/img/contacto/Carne-asada-form.png) no-repeat;
-    background-position: 33% 100%;
-}
-
-.presentacion__content {
-    width: 50%;
-    color: var(--color-blanco);
-    background-color: var(--color-primario);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5.75rem 2.5rem;
 }
 
 /* -------------------- MEDIA QUERIES ------------------- */
