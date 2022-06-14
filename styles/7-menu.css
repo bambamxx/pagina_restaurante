@@ -1,3 +1,193 @@
 .menu--banner {
     background-image: url(../img/menu/banner.png);
 }
+/* ------------------ TARJETAS-OFERTAS ------------------ */
+.container-tarjetas-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.125rem;
+}
+
+.tarjeta-oferta {
+    display: flex;
+    margin: 0 auto;
+    max-width: 578px;
+    width: calc(50% - 1.125rem);
+    padding: 1rem;
+    justify-content: space-between;
+    user-select: none;
+}
+.tarjeta-oferta:hover {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23CD8F63FF' stroke-width='1' stroke-dasharray='7' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.tarjeta-oferta.active {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23CD8F63FF' stroke-width='1' stroke-dasharray='7' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.tarjeta-oferta__content {
+    font-size: 500;
+}
+
+.tarjeta-oferta__content h3 {
+    display: inline-block;
+    font-size: 1rem;
+}
+.tarjeta-oferta__content span {
+    font-size: 0.625rem;
+    color: rgba(0, 0, 0, 0.675);
+}
+.tarjeta-oferta__content p {
+    font-size: 0.8125rem;
+}
+.tarjeta-oferta__content h3,
+.tarjeta-oferta__precio span {
+    margin-bottom: 0.4375rem;
+}
+
+.tarjeta-oferta__precio span {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+/* ----------------------- GALERIA ---------------------- */
+.galeria-ofertas-container {
+    display: grid;
+    grid-template-columns: calc(50% - 1rem) calc(25% - 1rem) calc(25%);
+    gap: 1.5rem;
+    margin-top: 5.0625rem;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria-item::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.galeria-item:hover .galeria-item__descripcion {
+    top: 0;
+}
+
+.galeria-item:hover .galeria-item__img {
+    transform: scale(1.15);
+}
+
+.galeria-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms;
+}
+.galeria-item__descripcion {
+    position: absolute;
+    transition: all 300ms;
+    top: -100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-blanco);
+    text-align: center;
+}
+.galeria-item__descripcion h3 {
+    position: relative;
+    transition: all 500ms;
+    font-size: 1.675rem;
+    font-weight: 500;
+}
+.galeria-item__descripcion span {
+    font-size: 0.8375rem;
+    font-weight: 300;
+}
+.galeria-item__descripcion .item-init {
+    width: 24px;
+    height: 34px;
+    background: url(/icons/arrow-right.svg) center no-repeat;
+    position: absolute;
+    top: 1.625rem;
+    right: 1.625rem;
+    cursor: pointer;
+}
+/* ------------------------ MODAL ----------------------- */
+.modal-menu-container {
+    left: 100%;
+    position: fixed;
+}
+
+.modal-menu-container.active {
+    display: flex;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0%;
+    background: var(--color-blanco);
+    width: 100%;
+    transition: all 300ms;
+}
+
+.close {
+    width: 24px;
+    height: 24px;
+    background: url(/icons/close.svg) center no-repeat;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.wrapper-img {
+    width: 45%;
+    background: url(/img/menu/gallery-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper-plato {
+    font-size: 1rem;
+    padding: 3rem;
+    width: 55%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.071);
+}
+.wrapper-plato .receta-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.wrapper-plato .receta-title h2 {
+    font-weight: 800;
+}
+
+/* -------------------- MEDIA QUERIES ------------------- */
+@media screen and (max-width: 992px) {
+    .galeria-ofertas-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .galeria-item__descripcion h3 {
+        font-size: 1.1875rem;
+    }
+    .galeria-item__descripcion span {
+        font-size: 0.7875rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tarjeta-oferta {
+        width: 100%;
+    }
+    .galeria-ofertas-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}

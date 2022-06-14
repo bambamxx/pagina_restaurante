@@ -91,43 +91,6 @@
     transform: translateX(-50%) scale(1.1);
 }
 
-/* -------------------- NOTA FLOTANTE ------------------- */
-
-.nota-flotante {
-    max-width: 596px;
-    width: 50%;
-    padding: 2.5rem;
-    position: absolute;
-    right: 0;
-    top: 40%;
-    font-weight: 400;
-    background-color: var(--color-blanco);
-}
-
-.nota-flotante-right {
-    font-weight: 400;
-    max-width: 596px;
-    width: 50%;
-    padding: 2.5rem;
-    position: absolute;
-    left: 0;
-    top: 20%;
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-}
-
-.nota-flotante p,
-.nota-flotante-right p {
-    font-size: 1.25rem;
-}
-
-.nota-flotante h3,
-.nota-flotante-right h3 {
-    color: var(--color-secundario);
-    font-size: 2.31rem;
-    font-weight: 400;
-}
-
 /* -------------------- PRESENTACION -------------------- */
 
 .presentacion-container {
@@ -152,6 +115,43 @@
     padding: 5.75rem 2.5rem;
 }
 
+/* -------------------- NOTA FLOTANTE ------------------- */
+
+.nota-flotante {
+    max-width: 596px;
+    width: 50%;
+    padding: 2.5rem;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    font-weight: 400;
+    background-color: var(--color-blanco);
+}
+
+.nota-flotante-right {
+    font-weight: 400;
+    max-width: 596px;
+    width: 40%;
+    padding: 2.5rem;
+    position: absolute;
+    left: 5rem;
+    top: 20%;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.nota-flotante p,
+.nota-flotante-right p {
+    font-size: 1.25rem;
+}
+
+.nota-flotante h3,
+.nota-flotante-right h3 {
+    color: var(--color-secundario);
+    font-size: 2.31rem;
+    font-weight: 400;
+}
+
 /* -------------------- MEDIA QUERIES ------------------- */
 @media screen and (max-width: 768px) {
     .banner {
@@ -159,10 +159,16 @@
     }
     .nota-flotante {
         position: relative;
-        padding: 2.5rem 0 0 0;
+        padding: 2.5rem 0.5rem 0 0.5rem;
         width: 100%;
     }
-
+    .nota-flotante-right {
+        position: relative;
+        width: 100%;
+        left: 0;
+        max-width: none;
+        margin-top: 10px;
+    }
     .title {
         margin: 0px auto 3.0625rem auto;
     }

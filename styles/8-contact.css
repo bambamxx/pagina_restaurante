@@ -3,6 +3,10 @@
     background-image: url(../img/contacto/banner.png);
 }
 
+.seccion-ubicacion {
+    position: relative;
+}
+
 /* ------------------------ FORM ------------------------ */
 .form-reservacion {
     display: flex;
@@ -27,7 +31,16 @@ select {
 
 .ubicacion__map iframe {
     display: block;
-    margin: 0 0 0 auto;
-    width: 90%;
+    margin: 0 0px 0px auto;
+    padding-right: 5rem;
+    width: 70%;
     min-height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .ubicacion__map iframe {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
 }

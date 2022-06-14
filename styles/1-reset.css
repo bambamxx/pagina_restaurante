@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* ---------------------- VARIABLE ---------------------- */
+
+:root {
+    --color-primario: #8e1719;
+    --color-secundario: #cd8f63;
+    --color-terciario: #1e1e1e;
+    --color-blanco: #ffff;
+    --color-negro: rgb(0, 0, 0);
+}
+/* ------------------------ RESET ----------------------- */
 * {
     margin: 0;
     border: 0;
@@ -18,12 +29,12 @@ img {
     display: block;
     max-width: 100%;
 }
-/* ---------------------- VARIABLE ---------------------- */
 
-:root {
-    --color-primario: #8e1719;
-    --color-secundario: #cd8f63;
-    --color-terciario: #1e1e1e;
-    --color-blanco: #ffff;
-    --color-negro: rgb(0, 0, 0);
+::-webkit-scrollbar {
+    width: 2px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primario);
+    border-radius: 10px;
 }
